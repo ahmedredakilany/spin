@@ -94,7 +94,7 @@ p {
   font-size: 26px;
   font-weight: 600;
 }
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .w3-hide-small {
     display: block !important;
   }
