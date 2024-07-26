@@ -99,6 +99,8 @@ p {
     display: block !important;
   }
   .w3-container {
-    width: 800px;
+    width: 700px;
+    margin: 0 auto;
+    display: block;
   }
 }
