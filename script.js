@@ -53,7 +53,7 @@
       },
     }).then((result) => {
       if (result.isConfirmed) {
-        // Redirect to your prize link
+        // اللينك
         window.location.href = "https://bit.ly/3UVk49n";
       }
     });

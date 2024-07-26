@@ -1,26 +1,30 @@
+/* Main container for centering the app */
 #app {
-  width: 800px;
-  /* height: 800px; */
+  width: 100%;
+  max-width: 800px;
   margin: 0 auto;
   position: relative;
+  text-align: center;
 }
 
 .marker {
   position: absolute;
   width: 60px;
-  left: 370px;
+  left: 50%;
   top: -18px;
+  transform: translateX(-50%);
   z-index: 2;
 }
 
 .wheel {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .button {
   display: block;
-  width: 400px;
+  width: 80%;
+  max-width: 400px;
   margin: 40px auto;
   cursor: pointer;
 }
@@ -33,74 +37,152 @@
   animation: blur 10s;
 }
 
-/* styles.css */
-
-body,
-html {
-  /* height: 100%;
+body {
+  background: rgb(174, 238, 203);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(174, 238, 203, 1) 0%,
+    rgba(18, 14, 89, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(174, 238, 203, 1) 0%,
+    rgba(18, 14, 89, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(174, 238, 203, 1) 0%,
+    rgba(18, 14, 89, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#aeeecb",endColorstr="#120e59",GradientType=1);
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
+  font-family: Arial, sans-serif;
 }
 
-#app {
-  text-align: center;
-}
-
-.marker,
-.wheel,
-.button {
-  display: block;
-  margin: 10px auto; /* ضبط المسافة بين العناصر */
-}
-
-/* styles.css */
-
-.swal2-title-large {
-  font-size: 26px; /* تكبير حجم العنوان */
-}
-
-.swal2-content-large {
-  font-size: 20px; /* تكبير حجم النص */
-}
-
-.swal2-confirm-button-large {
-  font-size: 20px; /* تكبير حجم زر التأكيد */
-  padding: 10px 20px; /* تكبير حجم الزر */
-}
-
-@keyframes blur {
-  0% {
-    filter: blur(1.5px);
-  }
-  80% {
-    filter: blur(1.5px);
-  }
-  100% {
-    filter: blur(0px);
-  }
+.w3-container {
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 h2,
 p {
   text-align: center;
+  margin: 10px 0;
 }
+
 h2 {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 600;
 }
+
 p {
-  font-size: 26px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
 }
-@media (max-width: 767px) {
+
+ul {
+  background-color: #eee;
+  border-radius: 10px;
+  padding: 0;
+  list-style-type: none;
+  margin: 20px 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li:hover {
+  background-color: beige;
+  border-radius: 10px;
+}
+
+.w3-bar-item {
+  margin-left: 10px;
+}
+
+.w3-bar-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* SweetAlert2 custom styles */
+.swal2-title-large {
+  font-size: 26px;
+}
+
+.swal2-content-large {
+  font-size: 20px;
+}
+
+.swal2-confirm-button-large {
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  #app {
+    width: 100%;
+  }
+
+  .marker {
+    width: 50px;
+    left: 50%;
+    top: -15px;
+  }
+
+  .button {
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .w3-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .w3-bar-item img {
+    width: 40px;
+    height: 40px;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .w3-bar-item {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .w3-bar-item span {
+    font-size: 14px;
+  }
+
   .w3-hide-small {
     display: block !important;
   }
-  .w3-container {
-    width: 700px;
-    margin: 0 auto;
-    display: block;
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
