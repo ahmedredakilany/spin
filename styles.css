@@ -55,6 +55,21 @@ html {
   margin: 10px auto; /* ضبط المسافة بين العناصر */
 }
 
+/* styles.css */
+
+.swal2-title-large {
+  font-size: 26px; /* تكبير حجم العنوان */
+}
+
+.swal2-content-large {
+  font-size: 20px; /* تكبير حجم النص */
+}
+
+.swal2-confirm-button-large {
+  font-size: 20px; /* تكبير حجم زر التأكيد */
+  padding: 10px 20px; /* تكبير حجم الزر */
+}
+
 @keyframes blur {
   0% {
     filter: blur(1.5px);

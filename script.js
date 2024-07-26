@@ -45,6 +45,12 @@
       confirmButtonText: "أحصل على جائزتك الآن",
       allowOutsideClick: false,
       allowEscapeKey: false,
+      width: "800px", // تكبير حجم المربع
+      customClass: {
+        title: "swal2-title-large",
+        content: "swal2-content-large",
+        confirmButton: "swal2-confirm-button-large",
+      },
     }).then((result) => {
       if (result.isConfirmed) {
         // Redirect to your prize link
