@@ -8,8 +8,8 @@
 .marker {
   position: absolute;
   width: 60px;
-  left: 172px;
-  top: -20px;
+  left: 370px;
+  top: -18px;
   z-index: 2;
 }
 
@@ -20,7 +20,7 @@
 
 .button {
   display: block;
-  width: 250px;
+  width: 400px;
   margin: 40px auto;
   cursor: pointer;
 }

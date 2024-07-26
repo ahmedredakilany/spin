@@ -39,7 +39,7 @@
       title: "مبروك كسبت أيفون 15",
       text: "أحصل على جائزتك الآن",
       imageUrl: "iPhone 15.png", // ضع مسار الصورة هنا
-      imageWidth: 400,
+      imageWidth: 600,
       imageAlt: "iPhone 15",
       showConfirmButton: true,
       confirmButtonText: "أحصل على جائزتك الآن",
